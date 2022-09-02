@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --c-white: hsl(0, 0%, 100%);
+  --c-light-gray: hsl(212, 45%, 89%);
+  --c-grayinsh-blue: hsl(220, 15%, 55%);
+  --c-dark-blue: hsl(218, 44%, 22%);
+  --ff-primary: 'Outfit', sans-serif;
+  --fs-p: 15px;
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+}
+
+.bg-light-gray {
+  background: var(--c-light-gray);
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-code-block {
+  width: 320px;
+  padding: 1.1rem;
+  text-align: center;
+
+  background: var(--c-white);
+  border-radius: 1.3rem;
+  box-shadow: 0px 0px 20px 3px rgba(34, 60, 80, 0.14);
+}
+
+.qr-code-block img {
+  max-width: 100%;
+  border-radius: 0.7rem;
+}
+
+.qr-code-block h1 {
+  font-size: 1.3rem;
+  font-weight: var(--fw-bold);
+  color: var(--c-dark-blue);
+}
+
+.qr-code-block p {
+  font-size: var(--fs-p);
+  font-weight: var(--fw-normal);
+  color: var(--c-grayinsh-blue);
+}
+
+.qr-code-block h1,
+p {
+  margin: 1rem;
+}
