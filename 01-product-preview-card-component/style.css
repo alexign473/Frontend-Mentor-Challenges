@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  /* Base */
+  --c-base-darkcyan: 158, 36%;
+  /* Primary */
+  --c-primary: hsl(var(--c-base-darkcyan), 37%);
+  --c-primary-hover: hsl(var(--c-base-darkcyan), 20%);
+  --c-cream: hsl(30, 38%, 92%);
+  /* Neutral */
+  --c-verydarkblue: hsl(212, 21%, 14%);
+  --c-darkgrayishblue: hsl(228, 12%, 48%);
+  --ff-primary: 'Montserrat', sans-serif;
+  --ff-accent: 'Fraunces', serif;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-primary);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: var(--c-verydarkblue);
+  line-height: 1;
+}
+
+.text-accent {
+  font-family: var(--ff-accent);
+}
+
+.text-large {
+  font-size: 2.3rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.bg-cream {
+  background-color: var(--c-cream);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  background-color: white;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.details {
+  padding: 2.1rem;
+}
+
+.details h2,
+.details p,
+.details del {
+  color: var(--c-darkgrayishblue);
+}
+
+.details h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.details p {
+  line-height: 1.7;
+}
+
+.details button {
+  width: 100%;
+}
+
+.btn {
+  background-color: var(--c-primary);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--c-primary-hover);
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 16px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 1rem;
+}
+
+.price span {
+  color: var(--c-primary);
+  margin-right: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 720px) {
+  .card {
+    flex-direction: row;
+    min-height: 450px;
+    max-width: 600px;
+  }
+
+  .details > * {
+    margin: 0;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  img,
+  picture,
+  .details {
+    width: 50%;
+  }
+}
