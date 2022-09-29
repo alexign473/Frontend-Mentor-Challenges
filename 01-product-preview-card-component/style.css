@@ -76,17 +76,15 @@ h1 {
   padding: 2.1rem;
 }
 
-.details h2,
 .details p,
 .details del {
   color: var(--c-darkgrayishblue);
 }
 
-.details h2 {
+.details p:first-child {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 0.9rem;
-  font-weight: normal;
   margin: 0;
 }
 
@@ -143,7 +141,7 @@ h1 {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 45em) {
   .card {
     flex-direction: row;
     min-height: 450px;
