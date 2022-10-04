@@ -19,17 +19,19 @@
     <main class="wrapper min-h-screen bg-main">
       <div class="container">
         <section class="hero">
-          <picture>
-            <source
-              media="(max-width:768px)"
-              srcset="images/image-header-mobile.jpg"
-            />
-            <img
-              src="images/image-header-desktop.jpg"
-              class="img-cover"
-              alt="Working people"
-            />
-          </picture>
+          <div class="bg-accent">
+            <picture class="img-cover">
+              <source
+                media="(max-width:768px)"
+                srcset="images/image-header-mobile.jpg"
+              />
+              <img
+                src="images/image-header-desktop.jpg"
+                class="img-cover"
+                alt="Office workers"
+              />
+            </picture>
+          </div>
 
           <div class="hero-content">
             <h1>
@@ -61,7 +63,9 @@
 
     <footer class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-component-4ep2fcDRuD"
+        target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/alexign473">AlexI</a>.
     </footer>
